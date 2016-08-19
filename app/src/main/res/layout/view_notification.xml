@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/alul3x"
+  android:orientation="horizontal"
+  android:paddingLeft="18dp"
+  android:paddingTop="14dp"
+  android:paddingRight="21dp"
+  android:paddingBottom="14dp">
+
+  <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="top"
+      android:orientation="horizontal"
+      android:layout_marginBottom="6dp">
+
+      <TextView
+        android:id="@+id/txtAuthor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/text_almost_white"
+        android:textStyle="bold"
+        tools:text="Important notification" />
+
+      <TextView
+        android:id="@+id/txtSentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="8dp"
+        android:alpha=".7"
+        android:textColor="@color/text_almost_white"
+        android:textSize="12dp"
+        tools:text="2016.08.12 12:34:10" />
+    </LinearLayout>
+
+    <TextView
+      android:id="@+id/txtMessage"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ellipsize="end"
+      android:textColor="@color/text_almost_white"
+      tools:text="Szép. Ez pedig egy szép hosszú komment. Így lehet megnézni, hogy megfelelően működik e a sorhossz limitálása a külömböző kontextusokban :)" />
+  </LinearLayout>
+</LinearLayout>

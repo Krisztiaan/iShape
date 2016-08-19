@@ -1,0 +1,97 @@
+<resources>
+  <string name="app_name">iShape</string>
+
+  <string name="drawler_map">map</string>
+  <string name="preference_key_email">prefs</string>
+  <string name="preference_key_password">password</string>
+  <string name="preference_key_token">token</string>
+  <string name="preference_key_id">id</string>
+  <string name="drawler_search">search</string>
+  <string name="drawler_toplist">toplist</string>
+  <string name="drawler_profile">profile</string>
+  <string name="drawler_activity">history</string>
+  <string name="drawler_rules">rules</string>
+  <string name="drawler_mentor">mentor</string>
+  <string name="drawler_calendar">calendar</string>
+  <string name="drawler_legal">legal</string>
+
+  <string name="cycle">cycle <b>%1$s</b> pts</string>
+  <string name="year">year <b>%1$s</b> pts</string>
+  <string name="pts">&lt;b>%1$s&lt;/b> pts</string>
+
+  <string name="prof_cycle">cycle </string>
+  <string name="prof_year">farm year </string>
+  <string name="ranking">ranking </string>
+
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+
+  <string name="action_example">Example action</string>
+
+  <string name="action_settings">Settings</string>
+
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="button_give_endorsement">new endorsement</string>
+  <string name="nomination_list_empty">List is empty...</string>
+  <string name="give_endorsement_button">endorse</string>
+  <string name="point">point</string>
+  <string name="to">To</string>
+  <string name="category">Category</string>
+  <string name="reason">Reason</string>
+  <string name="submit">submit</string>
+  <string name="hello">Hello!</string>
+  <string name="new_password">new password</string>
+  <string name="rec_password">received password</string>
+  <string name="points">(%1$s) points</string>
+  <string name="points_activity">&lt;b>%1$s&lt;/b> points</string>
+  <string name="i_would_like_to">I would like to,</string>
+  <string name="endorse">Endorse</string>
+  <string name="got_it">Got It</string>
+  <string name="my_endorsements">my endorsements</string>
+  <string name="trade">trade!</string>
+  <string name="drawer_feed">feed</string>
+  <string name="view_and_write_comments">View and write comments</string>
+  <string name="like_post">Like post</string>
+  <plurals name="no_of_comments">
+    <item quantity="zero">0 comments</item>
+    <item quantity="one">1 comment</item>
+    <item quantity="many">%s comments</item>
+    <item quantity="other">%s comments</item>
+  </plurals>
+  <plurals name="no_of_likes">
+    <item quantity="zero">0 likes</item>
+    <item quantity="one">1 like</item>
+    <item quantity="many">%s likes</item>
+    <item quantity="other">%s likes</item>
+  </plurals>
+  <string name="from_s">from %1$s</string>
+  <string name="to_s">to %1$s</string>
+  <plurals name="read_n_more">
+    <item quantity="zero"> </item>
+    <item quantity="one">read more</item>
+    <item quantity="many">read %d more</item>
+    <item quantity="other">read %d more</item>
+  </plurals>
+  <string name="n_pts_in_s">%1$d pts in %2$s</string>
+  <string name="hint_new_comment">New comment...</string>
+
+  <string-array name="category_array">
+    <item>Charity</item>
+    <item>Knowledge share</item>
+    <item>Innovator</item>
+    <item>Team builder</item>
+    <item>Brand builder</item>
+    <item>Self developer</item>
+    <item>Special</item>
+  </string-array>
+
+  <string-array name="category_selector_array">
+    <item>Charity</item>
+    <item>Knowledge share</item>
+    <item>Innovator</item>
+    <item>Team builder</item>
+    <item>Brand builder</item>
+    <item>Self developer</item>
+  </string-array>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="70dp">
+
+  <ProgressBar
+    android:id="@+id/progressBar"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:indeterminateDrawable="@drawable/progress_light"
+    android:visibility="visible"
+    android:layout_gravity="center" />
+</FrameLayout>

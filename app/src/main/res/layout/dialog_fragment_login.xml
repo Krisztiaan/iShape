@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_blue"
+    android:orientation="vertical"
+    android:padding="@dimen/dialog_title_padding">
+
+    <TextView
+      style="@style/Base.TextAppearance.AppCompat.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="@string/hello"
+      android:textColor="@android:color/white"
+      android:textSize="40sp"
+      android:textStyle="bold" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+      android:id="@+id/email"
+      style="@style/App_EditTextStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/edit_text_margin"
+      android:hint="email"
+      android:imeOptions="actionNext"
+      android:inputType="textEmailAddress"
+      android:singleLine="true"
+      android:textAppearance="@style/TextAppearance.AppCompat.Small"
+      android:textColor="@color/light_blue"
+      android:textColorHint="@color/light_blue" />
+
+    <EditText
+      android:id="@+id/password"
+      style="@style/App_EditTextStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/edit_text_margin"
+      android:drawableRight="@drawable/szem_closed"
+      android:hint="@string/rec_password"
+      android:imeOptions="actionNext"
+      android:password="true"
+      android:singleLine="true"
+      android:textAppearance="@style/TextAppearance.AppCompat.Small"
+      android:textColor="@color/light_blue"
+      android:textColorHint="@color/light_blue" />
+
+    <EditText
+      android:id="@+id/new_password"
+      style="@style/App_EditTextStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/edit_text_margin"
+      android:drawableRight="@drawable/szem_closed"
+      android:hint="@string/new_password"
+      android:imeOptions="actionDone"
+      android:password="true"
+      android:singleLine="true"
+      android:textAppearance="@style/TextAppearance.AppCompat.Small"
+      android:textColor="@color/light_blue"
+      android:textColorHint="@color/light_blue" />
+
+  </LinearLayout>
+
+  <Button
+    android:id="@+id/loginButton"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dialog_button_height"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/transparent_blue_button_selector"
+    android:text="@android:string/ok"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    android:textColor="@color/light_blue" />
+
+</LinearLayout>

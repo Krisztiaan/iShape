@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/light_blue">
+
+    <AutoCompleteTextView
+        android:id="@+id/searchText"
+        android:completionThreshold="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/autocomplete_text_bg"/>
+
+    </LinearLayout>
+
+        <RadioGroup
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/light_blue">
+
+            <RadioButton
+                android:id="@+id/rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button_down"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="2dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:checked="true"
+                android:text="rank" />
+
+            <RadioButton
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="70dp"
+                android:paddingLeft="2dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/radio_button_down"
+                android:textColor="@android:color/white"
+                android:text="abc" />
+
+            <RadioButton
+                android:id="@+id/pointInYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="2dp"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/radio_button_down"
+                android:textColor="@android:color/white"
+                android:text="cycle" />
+
+            <RadioButton
+                android:id="@+id/pointInCycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button_down"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="2dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:text="f.year" />
+        </RadioGroup>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:dividerHeight="3dp"
+        android:drawSelectorOnTop="false" />
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="List is empty..." />
+</LinearLayout>

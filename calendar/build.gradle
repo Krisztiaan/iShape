@@ -1,0 +1,19 @@
+apply plugin: 'com.android.library'
+android {
+  compileSdkVersion 23
+  buildToolsVersion '24.0.0'
+
+  defaultConfig {
+    minSdkVersion 16
+  }
+
+  sourceSets {
+    main {
+      manifest.srcFile 'AndroidManifest.xml'
+      java.srcDirs = ['src']
+      res.srcDirs = ['res']
+      assets.srcDir("assets")
+    }
+  }
+}
+dependencies {}

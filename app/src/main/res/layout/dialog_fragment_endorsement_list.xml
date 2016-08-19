@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="80dp"
+    android:layout_marginBottom="60dp"
+    android:background="@android:color/transparent"
+    android:animateLayoutChanges="true">
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="30.0sp"
+        android:layout_above="@+id/buttonOk"
+        android:drawSelectorOnTop="false" />
+
+    <Button
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/buttonOk"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/edit_text_margin"
+        android:background="@drawable/blue_button_selector"
+        android:textColor="@android:color/white"
+        android:text="@android:string/ok"/>
+</RelativeLayout>

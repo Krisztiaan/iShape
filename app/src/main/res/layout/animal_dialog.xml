@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="250dp"
+  android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:padding="10dp"
+  android:orientation="vertical"
+  android:background="@drawable/tooltip_base">
+    <com.mikhaellopez.circularimageview.CircularImageView
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      app:civ_border_color="@color/see_blue"
+      android:src="@drawable/bagoly"/>
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@null"
+        android:src="@drawable/x_blue" />
+
+    <TextView
+        style="@android:style/TextAppearance.DeviceDefault.Small"
+        android:textStyle="bold"
+        android:textColor="@color/light_blue"
+        android:id="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="demoText" />
+
+    <TextView
+        style="@android:style/TextAppearance.DeviceDefault.Small"
+        android:layout_below="@+id/name"
+        android:textColor="@color/light_blue"
+        android:id="@+id/desc"
+        android:paddingTop="5dp"
+        android:paddingBottom="25dp"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test animal desctest animal desc" />
+</RelativeLayout>

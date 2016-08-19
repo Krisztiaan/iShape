@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue">
+
+    <LinearLayout
+        android:id="@+id/pointLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/action_item_top_padding"
+        android:background="@drawable/text_view_bg_left"
+        android:paddingTop="@dimen/text_top_bottom_padding"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:text="@string/points"
+            android:gravity="center"
+            android:drawableTop="@drawable/activity_poi" />
+
+    </LinearLayout>
+
+    <TextView
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/time"
+        android:paddingRight="15dp"
+        android:textColor="@android:color/white"
+        android:gravity="right"
+        android:text="2015. 01. 01." />
+
+    <TextView
+        android:id="@+id/time"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:paddingTop="2sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:gravity="right"
+        android:text="12h 30m" />
+
+    <TextView
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Smith"
+        android:layout_marginTop="@dimen/action_item_top_padding"
+        android:textStyle="bold"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/white"
+        android:layout_toRightOf="@+id/pointLayout"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:id="@+id/job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test job"
+        android:paddingBottom="15dp"
+        android:textColor="@android:color/white"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/pointLayout"/>
+
+    <TextView
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test category"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/job"
+        android:layout_toRightOf="@+id/pointLayout"/>
+
+    <TextView
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test description"
+        android:paddingLeft="10dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/category"
+        android:paddingRight="@dimen/text_top_bottom_padding"
+        android:layout_toRightOf="@+id/pointLayout"/>
+</RelativeLayout>

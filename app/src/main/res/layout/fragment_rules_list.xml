@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ruleLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="80dp"
+    android:background="@color/light_blue"
+    android:animateLayoutChanges="true">
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null"
+        android:drawSelectorOnTop="false" />
+</RelativeLayout>

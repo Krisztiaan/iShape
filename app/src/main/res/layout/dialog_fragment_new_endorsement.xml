@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        android:text="@string/endorse"
+        android:padding="@dimen/dialog_title_padding"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/toTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:padding="12dp"
+            android:text="@string/give_endorsement_button"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/endorse"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:text="@string/endorse"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/toLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/edit_text_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:gravity="right|top"
+            android:paddingRight="@dimen/text_left_right_padding"
+            android:text="@string/to"
+            android:textColor="@color/light_blue" />
+
+        <AutoCompleteTextView
+            android:id="@+id/searchText"
+            style="@style/App_EditTextStyle"
+            android:imeOptions="actionDone"
+            android:completionThreshold="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/edit_text_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:gravity="right|top"
+            android:paddingRight="@dimen/text_left_right_padding"
+            android:text="@string/category"
+            android:textColor="@color/light_blue" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_bg"
+            android:entries="@array/category_selector_array" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/edit_text_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/reason"
+            android:paddingRight="@dimen/text_left_right_padding"
+            android:textColor="@color/light_blue" />
+
+        <EditText
+            android:id="@+id/reason"
+            style="@style/App_EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:lines="2" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/point"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/points"
+            android:textColor="@color/light_blue" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/edit_text_margin"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:stepSize="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:textAllCaps="false"
+        android:background="@color/light_blue"
+        android:text="@string/submit"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="2015. 11. 14."
+        android:paddingBottom="5dp"
+        android:textColor="@color/light_blue" />
+
+</LinearLayout>

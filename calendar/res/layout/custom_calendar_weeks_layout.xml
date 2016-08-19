@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/weekTitlePaddingTop"
+    android:weightSum="7">
+
+    <TextView
+        style="@style/CalendarView.DayOfTheWeek"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/selected_day_background"
+        android:textAllCaps="false"
+        android:tag="dayOfWeek1"
+        android:text="sun" />
+
+    <TextView
+        style="@style/CalendarView.DayOfTheWeek"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/selected_day_background"
+        android:textAllCaps="false"
+        android:tag="dayOfWeek2"
+        android:text="mon" />
+
+    <TextView
+        style="@style/CalendarView.DayOfTheWeek"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/selected_day_background"
+        android:textAllCaps="false"
+        android:tag="dayOfWeek3"
+        android:text="tue" />
+
+    <TextView
+        style="@style/CalendarView.DayOfTheWeek"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/selected_day_background"
+        android:textAllCaps="false"
+        android:tag="dayOfWeek4"
+        android:text="wed" />
+
+    <TextView
+        style="@style/CalendarView.DayOfTheWeek"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/selected_day_background"
+        android:textAllCaps="false"
+        android:tag="dayOfWeek5"
+        android:text="thu" />
+
+    <TextView
+        style="@style/CalendarView.DayOfTheWeek"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/selected_day_background"
+        android:textAllCaps="false"
+        android:tag="dayOfWeek6"
+        android:text="fri" />
+
+    <TextView
+        style="@style/CalendarView.DayOfTheWeek"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/selected_day_background"
+        android:textAllCaps="false"
+        android:tag="dayOfWeek7"
+        android:text="sat" />
+</LinearLayout>

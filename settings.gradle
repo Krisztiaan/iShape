@@ -1,0 +1,3 @@
+include ':app', ':mappwidgetlib'/*, ':library', ":calendar"*/
+//project(':mappwidgetlib').projectDir = new File('libs/mappwidgetlib')
+//project(':library').projectDir = new File('library')

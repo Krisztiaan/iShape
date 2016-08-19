@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="CommentView">
+    <attr name="comm_color" format="enum">
+      <enum name="blue" value="0"/>
+      <enum name="white" value="1"/>
+    </attr>
+    <attr name="comm_maxLines" format="integer"/>
+  </declare-styleable>
+</resources>
